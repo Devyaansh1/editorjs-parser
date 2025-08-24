@@ -1,6 +1,8 @@
 import { OutputBlockData, OutputData } from "@editorjs/editorjs";
 import { default as parsers } from "./parsers";
 
+// "build": "rollup --config && rm -rf .build/node_modules"
+
 type Plugins = (props: OutputBlockData) => string;
 type Options = {
   strict: boolean;

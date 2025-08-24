@@ -5,7 +5,8 @@
   "main": ".build/edjsHTML.node.js",
   "types": ".build/src/main.d.ts",
   "scripts": {
-    "build": "rollup --config && rm -rf .build/node_modules"
+    "build": "tsup src/index.ts --dts",
+    "prepare": "npm run build"
   },
   "keywords": [
     "editorjs",
